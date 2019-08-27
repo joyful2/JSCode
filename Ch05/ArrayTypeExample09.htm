@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Array Type Example 9</title>
     <script type="text/javascript">
-        var colors = new Array();                      //create an array
-        var count = colors.push("red", "green");       //push two items
-        alert(count);  //2
-        
-        count = colors.push("black");                  //push another item on
-        alert(count);  //3
-        
-        var item = colors.pop();                       //get the last item
-        alert(item);   //"black"
-        alert(colors.length);  //2
-    </script>
-</head>
-<body>
+      var colors = new Array(); //create an array
+      var count = colors.push('red', 'green'); //push two items
+      alert(count); //2
 
-</body>
+      count = colors.push('black'); //push another item on
+      alert(count); //3
+
+      var item = colors.pop(); //get the last item
+      alert(item); //"black"
+      var item2 = colors.shift(); //get the first item
+      alert(item2);
+      var count2 = colors.unshift('red', 'green'); //push two items
+      alert(count2); //2
+      alert(colors.length);
+    </script>
+  </head>
+  <body></body>
 </html>
