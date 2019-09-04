@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Math Object Random Example 3</title>
+    <script type="text/javascript">
+      function selectFrom(lowerValue, upperValue) {
+        var choices = upperValue - lowerValue + 1;
+        return Math.floor(Math.random() * choices + lowerValue);
+      }
+
+      setInterval(() => {
+        var num = selectFrom(2, 10);
+        console.log(num);
+      }, 100);
+
+      var colors = [
+        'red',
+        'green',
+        'blue',
+        'yellow',
+        'black',
+        'purple',
+        'brown'
+      ];
+      setInterval(() => {
+        var color = colors[selectFrom(0, colors.length - 1)];
+
+        console.log(color);
+      }, 100);
+    </script>
+  </head>
+  <body>
+    15 - 19 math.random()*19-15 + 15
+  </body>
+</html>
