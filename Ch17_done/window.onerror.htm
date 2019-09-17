@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OnError Example</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      window.onerror = function(message, url, line) {
+        alert(message);
+        return false; //false为弹出错误，true为阻止浏览器报告错误的默认行为（书中错误之处）
+      };
+
+      throw new Error('Something bad happened.');
+    </script>
+  </body>
+</html>
